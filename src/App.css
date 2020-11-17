@@ -36,7 +36,7 @@ h1 {
 }
 
 .search-form {
-  width: 60rem;
+  width: 80vw;
   height: 10rem;
   display: flex;
   justify-content: center;
@@ -98,7 +98,6 @@ h1 {
 }
 
 .recipe {
-  width: 30rem;
   margin: 3rem;
   display: flex;
   flex-direction: column;
