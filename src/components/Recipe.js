@@ -9,11 +9,11 @@ const Recipe = ({ recipe }) => {
       <div>
         <h2>{label}</h2>
       </div>
-      <div>
+      <div className="image">
         <img src={image} alt={label} />
         {/* <p className="healthLabels">{healthLabels.map(name => name).join(', ')}</p> */}
       </div>
-      <div >
+      <div className="ingredients">
         {<RecipeDetails ingredients={ingredients} />}
       </div>
       <div>

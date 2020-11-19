@@ -41,7 +41,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff5e;
+  background-color: #ffffffcf;
   border-radius: 0.5rem;
   margin-bottom: 5rem;
   box-shadow: 1rem 2rem 5rem #000;
@@ -102,7 +102,7 @@ h1 {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-evenly;
-  background-color: #ffffff5e;
+  background-color: #ffffffcf;
   padding: 2rem;
   box-sizing: border-box;
   position: relative;
@@ -110,6 +110,15 @@ h1 {
   box-shadow: 0 0 3rem rgb(0, 0, 0);
   width: 100%;
   margin-bottom: 20px;
+}
+
+.ingredients{
+  max-width: 100%;
+  width: 70%;
+}
+.image{
+  max-width: 100%;
+  width: 300px;
 }
 
 .recipe div:first-child{
@@ -186,6 +195,7 @@ h1 {
   padding: 0.5rem;
   width: 100%;
   display: flex;
+  box-sizing: border-box;
 
 }
 
@@ -197,9 +207,12 @@ h1 {
 .ingredient-text {
   font-size: 1.5rem;
   color: #888;
+  flex: 0 0 65%;
 }
 
 .ingredient-weight {
   color: #000;
   font-size: 1.3rem;
+  flex: 0 0 35%;
+  text-align: right;
 }
