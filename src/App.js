@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Axios from "axios";
-import { v4 as uuidv4 } from "uuid";
+import { v4 as uuid } from "uuid";
 import Recipe from "./components/Recipe";
 import Alert from "./components/Alert";
 
@@ -22,8 +22,8 @@ function App() {
       if (!result.data.more) {
         return setAlert("No food with such name");
       }
-      console.log(result.data.hits);
       setRecipes(result.data.hits);
+      console.log(result);
       setQuery("");
       setAlert("");
     } else {
@@ -59,7 +59,7 @@ function App() {
       </div>
       <div className="recipes">
         {recipes !== [] &&
-          recipes.map(recipe => <Recipe key={uuidv4()} recipe={recipe} />)}
+          recipes.map(recipe => <Recipe key={uuid()} recipe={recipe} />)}
       </div>
     </div>
   );
