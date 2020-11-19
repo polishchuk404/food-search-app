@@ -13,7 +13,7 @@ function App() {
   const APP_ID = "1f866a3e";
   const APP_KEY = "3214b3247efcdbc83bc9a4591c49abed";
 
-  const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
+  const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=30`;
 
 
   const getData = async () => {

@@ -36,12 +36,12 @@ h1 {
 }
 
 .search-form {
-  width: 80vw;
+  width: 90%;
   height: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff5e;
+  background-color: #ffffffcf;
   border-radius: 0.5rem;
   margin-bottom: 5rem;
   box-shadow: 1rem 2rem 5rem #000;
@@ -94,34 +94,53 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
 }
 
 .recipe {
-  margin: 3rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff5e;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: #ffffffcf;
   padding: 2rem;
+  box-sizing: border-box;
   position: relative;
   border-radius: 0.5rem;
   box-shadow: 0 0 3rem rgb(0, 0, 0);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.ingredients{
+  max-width: 100%;
+  width: 70%;
+}
+.image{
+  max-width: 100%;
+  width: 300px;
+}
+
+.recipe div:first-child{
+  flex: 0 0 100%;
+}
+
+.recipe div:last-child{
+  flex: 0 0 100%;
+  text-align: right;
+
 }
 
 .recipe h2 {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0.5rem;
   padding: 0.3rem 0.5rem;
-  position: absolute;
   text-align: center;
-  top: 20px;
-  left: 20px;
-  right: 20px;
   font-size: 2.3rem;
   font-weight: 400;
   text-shadow: 0 0.5rem 0.5rem #555;
   color: #fff;
+  margin-bottom: 20px;
 }
 
 .recipe img {
@@ -133,6 +152,10 @@ h1 {
   font-size: 1.8rem;
   color: #000;
   padding: 5px;
+  text-decoration: underline;
+}
+.recipe a:hover{
+  text-decoration: none;
 }
 
 .recipe p{
@@ -166,11 +189,13 @@ h1 {
   opacity: 0.9;
 }
 .ingredient-list {
-  margin-top: 1rem;
+  margin-bottom: 10px;
   background-color: #f0f0f0;
   border-radius: 0.5rem;
   padding: 0.5rem;
   width: 100%;
+  display: flex;
+  box-sizing: border-box;
 
 }
 
@@ -182,9 +207,12 @@ h1 {
 .ingredient-text {
   font-size: 1.5rem;
   color: #888;
+  flex: 0 0 65%;
 }
 
 .ingredient-weight {
   color: #000;
   font-size: 1.3rem;
+  flex: 0 0 35%;
+  text-align: right;
 }
